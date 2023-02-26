@@ -1,18 +1,16 @@
 # caso practico 2 - Antonio Rodes
-variable "location" {
-  type = string
-  description = "Región de Azure donde crearemos la infraestructura"
-  default = "<YOUR REGION>" 
+variable "resource_group_name" {
+  default = "rg-createdbyTF"
 }
 
-variable "public_key_path" {
-  type = string
-  description = "Ruta para la clave pública de acceso a las instancias"
-  default = "~/.ssh/id_rsa.pub" # o la ruta correspondiente
+variable "location_name" {
+  default = "uksouth"
 }
 
-variable "ssh_user" {
-  type = string
-  description = "Usuario para hacer ssh"
-  default = "<SSH USER>"
+variable "network_name" {
+  default = "vnet1"
+}
+
+variable "subnet_name" {
+  default = "subnet1"
 }
